@@ -3,7 +3,7 @@ import math
 
 # === Environment Fix: Ensure GDAL uses correct PROJ version ===
 
-os.environ['PROJ_LIB'] = r"C:\Users\tapes\anaconda3\envs\orthophoto\Library\share\proj"
+os.environ['PROJ_LIB'] = r"C:\Users\anaconda3\envs\orthophoto\Library\share\proj"
 os.environ['PROJ_NETWORK'] = 'OFF'
 os.environ['GDAL_DISABLE_READDIR_ON_OPEN'] = 'TRUE'
 
@@ -75,3 +75,4 @@ for i in range(tiles_y):
         tile_index += 1
 
 print(f"\n✅ Done! {tile_index} tiles saved to:\n{output_folder}")
+
